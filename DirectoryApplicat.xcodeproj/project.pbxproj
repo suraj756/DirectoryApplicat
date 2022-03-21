@@ -16,6 +16,12 @@
 		10603A9127E8DF7D00A05C92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10603A8F27E8DF7D00A05C92 /* LaunchScreen.storyboard */; };
 		10603A9C27E8DF7D00A05C92 /* DirectoryApplicatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10603A9B27E8DF7D00A05C92 /* DirectoryApplicatTests.swift */; };
 		10603AA727E8DF7D00A05C92 /* DirectoryApplicatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10603AA627E8DF7D00A05C92 /* DirectoryApplicatUITests.swift */; };
+		10603AB927E8DFF900A05C92 /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10603AB827E8DFF900A05C92 /* RoomsViewController.swift */; };
+		10603ABB27E8E03200A05C92 /* RoomsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10603ABA27E8E03200A05C92 /* RoomsModel.swift */; };
+		10603ABD27E8E04400A05C92 /* PeopleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10603ABC27E8E04400A05C92 /* PeopleModel.swift */; };
+		10603ABF27E8E0BE00A05C92 /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10603ABE27E8E0BE00A05C92 /* UserDataModel.swift */; };
+		10603AC127E8E0F100A05C92 /* RoomsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10603AC027E8E0F100A05C92 /* RoomsTableViewCell.swift */; };
+		10603AC327E8E10100A05C92 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10603AC227E8E10100A05C92 /* UsersTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		10603AA227E8DF7D00A05C92 /* DirectoryApplicatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DirectoryApplicatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10603AA627E8DF7D00A05C92 /* DirectoryApplicatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryApplicatUITests.swift; sourceTree = "<group>"; };
 		10603AA827E8DF7D00A05C92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10603AB827E8DFF900A05C92 /* RoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
+		10603ABA27E8E03200A05C92 /* RoomsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsModel.swift; sourceTree = "<group>"; };
+		10603ABC27E8E04400A05C92 /* PeopleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleModel.swift; sourceTree = "<group>"; };
+		10603ABE27E8E0BE00A05C92 /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
+		10603AC027E8E0F100A05C92 /* RoomsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsTableViewCell.swift; sourceTree = "<group>"; };
+		10603AC227E8E10100A05C92 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +113,12 @@
 		10603A8027E8DF7200A05C92 /* DirectoryApplicat */ = {
 			isa = PBXGroup;
 			children = (
+				10603AB727E8DFB700A05C92 /* View */,
+				10603AB627E8DFA600A05C92 /* Controller */,
+				10603AB527E8DF9D00A05C92 /* Model */,
+				10603AB427E8DF8F00A05C92 /* ViewModel */,
 				10603A8127E8DF7200A05C92 /* AppDelegate.swift */,
 				10603A8327E8DF7200A05C92 /* SceneDelegate.swift */,
-				10603A8527E8DF7200A05C92 /* ViewController.swift */,
 				10603A8727E8DF7200A05C92 /* Main.storyboard */,
 				10603A8D27E8DF7D00A05C92 /* Assets.xcassets */,
 				10603A8F27E8DF7D00A05C92 /* LaunchScreen.storyboard */,
@@ -129,6 +144,41 @@
 				10603AA827E8DF7D00A05C92 /* Info.plist */,
 			);
 			path = DirectoryApplicatUITests;
+			sourceTree = "<group>";
+		};
+		10603AB427E8DF8F00A05C92 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				10603ABE27E8E0BE00A05C92 /* UserDataModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		10603AB527E8DF9D00A05C92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				10603ABA27E8E03200A05C92 /* RoomsModel.swift */,
+				10603ABC27E8E04400A05C92 /* PeopleModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		10603AB627E8DFA600A05C92 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				10603A8527E8DF7200A05C92 /* ViewController.swift */,
+				10603AB827E8DFF900A05C92 /* RoomsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		10603AB727E8DFB700A05C92 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				10603AC027E8E0F100A05C92 /* RoomsTableViewCell.swift */,
+				10603AC227E8E10100A05C92 /* UsersTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +312,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10603AC327E8E10100A05C92 /* UsersTableViewCell.swift in Sources */,
 				10603A8627E8DF7200A05C92 /* ViewController.swift in Sources */,
+				10603ABD27E8E04400A05C92 /* PeopleModel.swift in Sources */,
 				10603A8C27E8DF7200A05C92 /* DirectoryApplicat.xcdatamodeld in Sources */,
+				10603AC127E8E0F100A05C92 /* RoomsTableViewCell.swift in Sources */,
+				10603ABB27E8E03200A05C92 /* RoomsModel.swift in Sources */,
+				10603AB927E8DFF900A05C92 /* RoomsViewController.swift in Sources */,
+				10603ABF27E8E0BE00A05C92 /* UserDataModel.swift in Sources */,
 				10603A8227E8DF7200A05C92 /* AppDelegate.swift in Sources */,
 				10603A8427E8DF7200A05C92 /* SceneDelegate.swift in Sources */,
 			);
@@ -370,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -424,7 +480,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -440,6 +496,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DirectoryApplicat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,6 +514,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DirectoryApplicat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
