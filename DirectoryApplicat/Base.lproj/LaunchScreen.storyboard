@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkV-eF-RUn">
-                                <rect key="frame" x="100" y="429" width="214" height="38.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VM App is being Launched...." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkV-eF-RUn">
+                                <rect key="frame" x="50" y="410" width="314" height="76.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -26,8 +26,8 @@
                         <color key="backgroundColor" red="0.76862745099999996" green="0.0078431372550000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="SkV-eF-RUn" firstAttribute="centerX" secondItem="tTJ-bg-wj7" secondAttribute="centerX" id="6MY-ZI-7iR"/>
-                            <constraint firstItem="IfX-Ri-Yof" firstAttribute="trailing" secondItem="SkV-eF-RUn" secondAttribute="trailing" constant="100" id="BKU-IW-70L"/>
-                            <constraint firstItem="SkV-eF-RUn" firstAttribute="leading" secondItem="IfX-Ri-Yof" secondAttribute="leading" constant="100" id="FAY-lb-xVF"/>
+                            <constraint firstItem="IfX-Ri-Yof" firstAttribute="trailing" secondItem="SkV-eF-RUn" secondAttribute="trailing" constant="50" id="BKU-IW-70L"/>
+                            <constraint firstItem="SkV-eF-RUn" firstAttribute="leading" secondItem="IfX-Ri-Yof" secondAttribute="leading" multiplier="0.8" constant="50" id="FAY-lb-xVF"/>
                             <constraint firstItem="SkV-eF-RUn" firstAttribute="centerY" secondItem="tTJ-bg-wj7" secondAttribute="centerY" id="OIA-Zg-QjO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IfX-Ri-Yof"/>
