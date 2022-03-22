@@ -64,9 +64,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     searchController.searchResultsUpdater = self as? UISearchResultsUpdating
     searchController.searchBar.placeholder = "Search Your Name"
     searchController.searchBar.delegate = self
-        // navigationItem.searchController = searchController
+         navigationItem.searchController = searchController
     searchController.obscuresBackgroundDuringPresentation = false
-         self.tblView.tableHeaderView = searchController.searchBar
+         //self.tblView.tableHeaderView = searchController.searchBar
      }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
