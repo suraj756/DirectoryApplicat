@@ -29,11 +29,12 @@ class UserDataModel {
         else{
             endPoint = "rooms"
         }
+        DispatchQueue.main.async {
+            self.vc?.addSplashLoaderView()
+        }
         URLSession.shared.dataTask(with: URL(string: "https://61e947967bc0550017bc61bf.mockapi.io/api/v1/\(endPoint)")!) { (data, response, error) in
             if error == nil{
-                DispatchQueue.main.async {
-                    self.vc?.addSplashLoaderView()
-                }
+                
                 if let data = data{
                   do{
                     if self.roomsDetails == false{
