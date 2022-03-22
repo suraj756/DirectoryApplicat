@@ -18,29 +18,51 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     var searchActive = false
     let searchController = UISearchController(searchResultsController: nil)
     var viewModelUser = UserDataModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
         viewModelUser.vc = self
         viewModelUser.roomsDetails = false
         viewModelUser.getAllUserData()
         self.noResultsView.frame  = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 200)
         self.noResultsView.center = self.tblView.center
-        
-        
+        hideKeyboardWhenTappedAround()
+      
         // Do any additional setup after loading the view.
+    }
+    
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    @objc func dismissKeyboard() {
+        
+        view.endEditing(true)
+    }
+    func addSplashLoaderView() {
+      if let customView = Bundle.main.loadNibNamed("SplashLoader", owner: self, options: nil)?.first as? SplashLoader {
+            customView.frame = self.view.frame
+            customView.tag   = 150
+         self.view.addSubview(customView)
+        }
+    }
+    func removeLoader() {
+        let customView = self.view.viewWithTag(150)
+        customView?.removeFromSuperview()
     }
     override func viewWillAppear(_ animated: Bool) {
         if self.noResultsView.isDescendant(of: self.view) {
                    self.noResultsView.removeFromSuperview()
                }
         searchBarSetup()
+        navigationController?.navigationBar.isHidden = false
     }
     
     private func searchBarSetup(){
     
     searchController.searchResultsUpdater = self as? UISearchResultsUpdating
+    searchController.searchBar.placeholder = "Search Your Name"
     searchController.searchBar.delegate = self
         // navigationItem.searchController = searchController
     searchController.obscuresBackgroundDuringPresentation = false

@@ -22,6 +22,8 @@
 		10603ABF27E8E0BE00A05C92 /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10603ABE27E8E0BE00A05C92 /* UserDataModel.swift */; };
 		10603AC127E8E0F100A05C92 /* RoomsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10603AC027E8E0F100A05C92 /* RoomsTableViewCell.swift */; };
 		10603AC327E8E10100A05C92 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10603AC227E8E10100A05C92 /* UsersTableViewCell.swift */; };
+		10603AC527E9819C00A05C92 /* SplashLoader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10603AC427E9819C00A05C92 /* SplashLoader.xib */; };
+		10603AC727E981DB00A05C92 /* SplashLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10603AC627E981DA00A05C92 /* SplashLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		10603ABE27E8E0BE00A05C92 /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
 		10603AC027E8E0F100A05C92 /* RoomsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsTableViewCell.swift; sourceTree = "<group>"; };
 		10603AC227E8E10100A05C92 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
+		10603AC427E9819C00A05C92 /* SplashLoader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashLoader.xib; sourceTree = "<group>"; };
+		10603AC627E981DA00A05C92 /* SplashLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +123,6 @@
 				10603AB427E8DF8F00A05C92 /* ViewModel */,
 				10603A8127E8DF7200A05C92 /* AppDelegate.swift */,
 				10603A8327E8DF7200A05C92 /* SceneDelegate.swift */,
-				10603A8727E8DF7200A05C92 /* Main.storyboard */,
 				10603A8D27E8DF7D00A05C92 /* Assets.xcassets */,
 				10603A8F27E8DF7D00A05C92 /* LaunchScreen.storyboard */,
 				10603A9227E8DF7D00A05C92 /* Info.plist */,
@@ -175,6 +178,9 @@
 		10603AB727E8DFB700A05C92 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				10603A8727E8DF7200A05C92 /* Main.storyboard */,
+				10603AC427E9819C00A05C92 /* SplashLoader.xib */,
+				10603AC627E981DA00A05C92 /* SplashLoader.swift */,
 				10603AC027E8E0F100A05C92 /* RoomsTableViewCell.swift */,
 				10603AC227E8E10100A05C92 /* UsersTableViewCell.swift */,
 			);
@@ -288,6 +294,7 @@
 				10603A9127E8DF7D00A05C92 /* LaunchScreen.storyboard in Resources */,
 				10603A8E27E8DF7D00A05C92 /* Assets.xcassets in Resources */,
 				10603A8927E8DF7200A05C92 /* Main.storyboard in Resources */,
+				10603AC527E9819C00A05C92 /* SplashLoader.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10603AC727E981DB00A05C92 /* SplashLoader.swift in Sources */,
 				10603AC327E8E10100A05C92 /* UsersTableViewCell.swift in Sources */,
 				10603A8627E8DF7200A05C92 /* ViewController.swift in Sources */,
 				10603ABD27E8E04400A05C92 /* PeopleModel.swift in Sources */,

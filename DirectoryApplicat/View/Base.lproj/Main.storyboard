@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LIo-hk-nyN">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,7 +11,7 @@
         <!--VM-->
         <scene sceneID="5G1-pa-iz0">
             <objects>
-                <viewController id="Lc7-C8-o7M" customClass="ViewController" customModule="DirectoryApplica" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Lc7-C8-o7M" customClass="ViewController" customModule="DirectoryApplicat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="096-Tn-I21">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,7 +20,7 @@
                                 <rect key="frame" x="20" y="88" width="374" height="729"/>
                                 <color key="backgroundColor" red="0.76862745099999996" green="0.0078431372550000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="UsersTableViewCell" rowHeight="143" id="b9j-Km-TGE" customClass="UsersTableViewCell" customModule="DirectoryApplica" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="UsersTableViewCell" rowHeight="143" id="b9j-Km-TGE" customClass="UsersTableViewCell" customModule="DirectoryApplicat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="374" height="143"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b9j-Km-TGE" id="MYt-sb-cmA">
@@ -119,6 +120,7 @@
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the Cell to check Rooms Availabilty" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eC6-Vh-ttI">
                                 <rect key="frame" x="60" y="822" width="294" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="zWU-GZ-83F"/>
                                 </constraints>
@@ -192,27 +194,27 @@
         <!--Rooms View Controller-->
         <scene sceneID="YSC-pK-te2">
             <objects>
-                <viewController storyboardIdentifier="RoomsViewController" id="a3O-CD-Svm" customClass="RoomsViewController" customModule="DirectoryApplica" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RoomsViewController" id="a3O-CD-Svm" customClass="RoomsViewController" customModule="DirectoryApplicat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tCm-5L-3Nf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="X43-U5-rzV">
-                                <rect key="frame" x="87" y="373" width="240" height="150"/>
+                                <rect key="frame" x="30" y="373" width="354" height="150"/>
                                 <color key="backgroundColor" red="0.76862745099999996" green="0.0078431372550000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="Pqn-TX-cL4"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RoomsTableViewCell" rowHeight="95" id="Hla-NZ-JnL" customClass="RoomsTableViewCell" customModule="DirectoryApplica" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="240" height="95"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RoomsTableViewCell" rowHeight="95" id="Hla-NZ-JnL" customClass="RoomsTableViewCell" customModule="DirectoryApplicat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="354" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hla-NZ-JnL" id="vos-zw-drq">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="95"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="354" height="95"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aX5-02-oPb">
-                                                    <rect key="frame" x="16" y="36.5" width="208" height="22.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aX5-02-oPb">
+                                                    <rect key="frame" x="20" y="16" width="314" height="22.5"/>
                                                     <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -220,8 +222,8 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                     </variation>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujq-qD-bvE">
-                                                    <rect key="frame" x="16" y="60" width="208" height="24"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujq-qD-bvE">
+                                                    <rect key="frame" x="20" y="61.5" width="314" height="22.5"/>
                                                     <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -232,19 +234,15 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.76862745099999996" green="0.0078431372550000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstItem="ujq-qD-bvE" firstAttribute="bottom" secondItem="vos-zw-drq" secondAttribute="bottomMargin" id="7tk-rT-JJD"/>
                                                 <constraint firstItem="ujq-qD-bvE" firstAttribute="leading" secondItem="vos-zw-drq" secondAttribute="leadingMargin" id="JLb-xF-wLC"/>
-                                                <constraint firstItem="ujq-qD-bvE" firstAttribute="top" secondItem="aX5-02-oPb" secondAttribute="bottom" constant="1" id="QfR-AP-Gzk"/>
+                                                <constraint firstItem="ujq-qD-bvE" firstAttribute="top" secondItem="aX5-02-oPb" secondAttribute="bottom" constant="23" id="QIE-3g-YyH"/>
                                                 <constraint firstItem="aX5-02-oPb" firstAttribute="leading" secondItem="vos-zw-drq" secondAttribute="leadingMargin" id="Tpb-c5-ixZ"/>
+                                                <constraint firstItem="aX5-02-oPb" firstAttribute="top" secondItem="vos-zw-drq" secondAttribute="topMargin" constant="5" id="n8U-HE-sax"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="aX5-02-oPb" secondAttribute="trailing" id="xsN-VE-AXc"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="ujq-qD-bvE" secondAttribute="trailing" id="yLQ-Qd-nOM"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.76862745099999996" green="0.0078431372550000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstItem="aX5-02-oPb" firstAttribute="centerY" secondItem="Hla-NZ-JnL" secondAttribute="centerY" id="6yG-KW-HEo"/>
-                                            <constraint firstItem="aX5-02-oPb" firstAttribute="centerX" secondItem="Hla-NZ-JnL" secondAttribute="centerX" id="hxZ-yn-acW"/>
-                                        </constraints>
                                         <connections>
                                             <outlet property="roomAvailabilty" destination="aX5-02-oPb" id="3Mr-67-1vZ"/>
                                             <outlet property="roomOccupanyMax" destination="ujq-qD-bvE" id="YnB-gZ-dLe"/>
@@ -272,7 +270,7 @@
                         <constraints>
                             <constraint firstItem="X43-U5-rzV" firstAttribute="centerX" secondItem="tCm-5L-3Nf" secondAttribute="centerX" id="9ll-N8-8nE"/>
                             <constraint firstItem="X43-U5-rzV" firstAttribute="centerY" secondItem="tCm-5L-3Nf" secondAttribute="centerY" id="B1x-Kd-6Jc"/>
-                            <constraint firstItem="X43-U5-rzV" firstAttribute="leading" secondItem="1nY-qK-Vme" secondAttribute="leading" constant="87" id="UaK-fL-oZH"/>
+                            <constraint firstItem="X43-U5-rzV" firstAttribute="leading" secondItem="1nY-qK-Vme" secondAttribute="leading" constant="30" id="UaK-fL-oZH"/>
                             <constraint firstItem="vS5-97-eqa" firstAttribute="leading" secondItem="1nY-qK-Vme" secondAttribute="leading" constant="10" id="ZsR-s9-l3s"/>
                             <constraint firstItem="vS5-97-eqa" firstAttribute="top" secondItem="1nY-qK-Vme" secondAttribute="top" constant="10" id="mB7-nL-YLx"/>
                         </constraints>

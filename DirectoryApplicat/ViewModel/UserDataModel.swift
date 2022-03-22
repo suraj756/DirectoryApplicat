@@ -21,6 +21,7 @@ class UserDataModel {
     weak var vc2:RoomsViewController?
     var roomsDetails = Bool()
 
+ 
     func getAllUserData(){
         if roomsDetails == false{
             endPoint = "people"
@@ -30,6 +31,9 @@ class UserDataModel {
         }
         URLSession.shared.dataTask(with: URL(string: "https://61e947967bc0550017bc61bf.mockapi.io/api/v1/\(endPoint)")!) { (data, response, error) in
             if error == nil{
+                DispatchQueue.main.async {
+                    self.vc?.addSplashLoaderView()
+                }
                 if let data = data{
                   do{
                     if self.roomsDetails == false{
@@ -40,6 +44,7 @@ class UserDataModel {
                      }
                      peopleModelData.append(contentsOf: self.arrUsers)
                     DispatchQueue.main.async {
+                        self.vc?.removeLoader()
                         self.vc?.tblView.reloadData()
                       }
                     }
@@ -51,16 +56,21 @@ class UserDataModel {
                              self.arrRooms.append(rooms)
                           }
                        DispatchQueue.main.async {
+                         self.vc?.removeLoader()
                           self.vc2?.tblView.reloadData()
                         }
                      }
                   }
                   catch{
+                    
                     print(error.localizedDescription)
                    }
                 }
             }
             else{
+                DispatchQueue.main.async {
+                  self.vc?.removeLoader()
+                }
                 print(error?.localizedDescription)
             }
         }.resume()

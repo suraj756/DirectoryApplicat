@@ -29,7 +29,7 @@ class RoomsTableViewCell: UITableViewCell {
         else{
           roomAvailabilty.text = "Rooms are not Occupied"
         }
-        roomOccupanyMax.text = "Max Occupancy" + "" + String(modelRooms!.maxOccupancy!)
+        roomOccupanyMax.text = "Max Occupancy" + " " + String(modelRooms!.maxOccupancy!)
         
     }
 
